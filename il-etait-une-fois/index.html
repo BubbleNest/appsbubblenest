@@ -25,6 +25,16 @@
   p, li { color:#33404d; }
   .lead { font-size:17px; color:#33404d; }
 
+  .shots { display:flex; gap:14px; overflow-x:auto; padding:8px 2px 16px; margin-top:8px;
+           scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch; }
+  .shots img { width:210px; flex:0 0 auto; border-radius:20px; border:1px solid #e3edf3;
+               box-shadow:0 8px 24px rgba(31,147,196,.14); scroll-snap-align:center; }
+
+  .safe-figure { text-align:center; margin-top:18px; }
+  .safe-figure img { width:190px; border-radius:18px; border:1px solid #e3edf3;
+                     box-shadow:0 8px 24px rgba(31,147,196,.14); }
+  .safe-figure figcaption { font-size:13px; color:var(--muted); margin-top:8px; }
+
   .features { display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:14px; margin-top:16px; }
   .feature { background:#fff; border:1px solid #e3edf3; border-radius:16px; padding:18px 20px; }
   .feature .ico { font-size:28px; }
@@ -69,6 +79,14 @@
       d'une voix douce et l'accompagne d'une berceuse. Le rituel du coucher, réinventé à chaque soir.
     </p>
 
+    <h2>Un aperçu de l'application</h2>
+    <div class="shots">
+      <img src="screenshots/creation.png" alt="Écran de création d'une nouvelle histoire">
+      <img src="screenshots/bibliotheque.png" alt="Bibliothèque des histoires de l'enfant">
+      <img src="screenshots/options.png" alt="Options d'une histoire : images, vidéo, musique, voix">
+      <img src="screenshots/lecteur.png" alt="Lecture d'une histoire illustrée">
+    </div>
+
     <h2>Comment ça marche&nbsp;?</h2>
     <ol class="steps">
       <li>
@@ -104,6 +122,10 @@
         <li><strong>Signalement en un geste</strong> — chaque histoire peut être signalée et est vérifiée.</li>
         <li><strong>Vie privée respectée</strong> — données minimales, chiffrées, et suppression possible à tout moment.</li>
       </ul>
+      <figure class="safe-figure">
+        <img src="screenshots/parental.png" alt="Barrière parentale : petit calcul avant d'accéder aux réglages ou aux achats">
+        <figcaption>La barrière parentale protège les achats et les réglages sensibles.</figcaption>
+      </figure>
     </div>
 
     <div class="contact">
