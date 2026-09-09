@@ -31,7 +31,7 @@
     <div class="emoji">📖</div>
     <h1>Politique de confidentialité</h1>
     <div class="sub">Application <strong>« Il était une fois »</strong> — contes personnalisés pour enfants<br>
-    Dernière mise à jour : 7 juillet 2026</div>
+    Dernière mise à jour : 9 septembre 2026</div>
   </header>
 
   <div class="card">
@@ -64,6 +64,7 @@
   <h3>Données techniques</h3>
   <ul>
     <li>Journaux techniques minimaux nécessaires au fonctionnement et à la sécurité. Signalements de contenu émis volontairement par le parent.</li>
+    <li>Données de gestion des achats et de prévention de la fraude&nbsp;: solde d'étoiles, montant cumulé des achats, nombre de remboursements obtenus auprès d'Apple ou de Google. Aucune donnée bancaire n'est concernée.</li>
   </ul>
 
   <h2>4. Pourquoi nous traitons ces données (finalités)</h2>
@@ -76,18 +77,33 @@
   <p><strong>Base légale&nbsp;:</strong> exécution du service demandé et <strong>consentement du parent</strong> (notamment pour les données relatives à l'enfant).</p>
 
   <h2>5. Génération par intelligence artificielle</h2>
-  <p>Pour créer une histoire, l'application transmet à des services d'IA de Google (Gemini pour le texte et la voix, et selon les options la vidéo et la musique) les éléments nécessaires&nbsp;: <strong>prénom (si l'enfant est le héros), âge et thème choisi</strong>. Les contenus sont générés selon des consignes strictes de bienveillance adaptées aux enfants. Ces échanges transitent par nos serveurs sécurisés&nbsp;; aucune clé d'accès n'est stockée sur l'appareil.</p>
+  <p>Pour créer une histoire, l'application transmet aux services d'IA les éléments strictement nécessaires&nbsp;: <strong>prénom (si l'enfant est le héros), âge et thème choisi</strong>. Chaque partie de l'histoire est confiée à un prestataire distinct&nbsp;:</p>
+  <ul>
+    <li><strong>Texte de l'histoire</strong>&nbsp;: <strong>Mistral AI</strong> (société française, modèles hébergés dans l'Union européenne). C'est ce service qui reçoit le prénom de l'enfant lorsqu'il est le héros du récit. En cas d'indisponibilité, un modèle Google Gemini prend le relais.</li>
+    <li><strong>Illustrations, voix de narration et musique</strong>&nbsp;: <strong>Google</strong> (Gemini pour les images et la voix, Lyria pour la berceuse).</li>
+    <li><strong>Vidéo</strong> (option)&nbsp;: <strong>fal.ai</strong> (États-Unis), qui exécute le modèle de génération vidéo. Seule la description visuelle de la scène lui est transmise.</li>
+  </ul>
+  <p>Les contenus sont générés selon des consignes strictes de bienveillance adaptées aux enfants. Ces échanges transitent par nos serveurs sécurisés&nbsp;; aucune clé d'accès n'est stockée sur l'appareil. Nous recourons aux offres professionnelles payantes de ces services, dont les conditions encadrent l'usage des données transmises.</p>
 
   <h2>6. Prestataires et destinataires</h2>
   <p>Nous ne vendons jamais vos données. Elles sont partagées uniquement avec les prestataires strictement nécessaires au service&nbsp;:</p>
   <ul>
     <li><strong>Google Firebase</strong> (authentification, base de données, stockage, fonctions serveur).</li>
-    <li><strong>Google — services d'IA</strong> (génération des histoires et des médias).</li>
+    <li><strong>Mistral AI</strong> — France (rédaction du texte des histoires).</li>
+    <li><strong>Google — services d'IA</strong> (illustrations, voix de narration, musique&nbsp;; texte en cas d'indisponibilité de Mistral).</li>
+    <li><strong>fal.ai</strong> — États-Unis (génération de la vidéo, lorsque cette option est choisie).</li>
     <li><strong>RevenueCat</strong> et les plateformes <strong>Apple / Google</strong> (gestion des achats).</li>
   </ul>
 
   <h2>7. Hébergement et localisation</h2>
-  <p>L'ensemble de notre infrastructure — <strong>base de données, stockage des fichiers et fonctions serveur</strong> — est hébergé sur <strong>Google Cloud / Firebase, dans l'Union européenne</strong> (région europe-west1). Seuls les <strong>services d'intelligence artificielle de Google</strong> (génération des textes, images, voix, musiques et vidéos) peuvent traiter les requêtes sur l'infrastructure mondiale de Google, y compris hors UE, encadrés par les <strong>garanties appropriées</strong> prévues par le RGPD (clauses contractuelles types de Google).</p>
+  <p>L'ensemble de notre infrastructure — <strong>base de données, stockage des fichiers et fonctions serveur</strong> — est hébergé sur <strong>Google Cloud / Firebase, dans l'Union européenne</strong> (région europe-west1). Vos histoires, profils et fichiers ne quittent donc pas l'UE.</p>
+  <p>Seuls les appels aux services d'IA sortent de cette infrastructure, et uniquement le temps de générer le contenu demandé&nbsp;:</p>
+  <ul>
+    <li><strong>Mistral AI</strong> traite le texte sur une infrastructure située dans l'Union européenne.</li>
+    <li><strong>Google</strong> (illustrations, voix, musique) peut traiter les requêtes sur son infrastructure mondiale, y compris hors UE.</li>
+    <li><strong>fal.ai</strong> (vidéo, en option) traite les requêtes aux États-Unis.</li>
+  </ul>
+  <p>Ces transferts hors Union européenne sont encadrés par les <strong>garanties appropriées</strong> prévues par le RGPD, notamment les clauses contractuelles types figurant aux conditions de ces prestataires.</p>
 
   <h2>8. Publicité et suivi</h2>
   <p>L'application <strong>ne contient aucune publicité</strong>, aucun identifiant publicitaire, et <strong>aucun traceur de profilage publicitaire ni suivi inter-applications</strong>.</p>
